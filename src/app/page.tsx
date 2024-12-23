@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <nav className="absolute top-0 right-0 left-0 z-10">
+      <nav className="absolute top-0 right-0 left-0 z-20">
         <div className="lg:max-w-[1280px] max-w-[390px] flex flex-wrap items-center justify-between mx-auto lg:pt-[28px] lg:pb-[29px] lg:px-[30px] py-0 px-[15px] lg:h-auto h-[68px]">
           <Link
             href="/"
@@ -65,15 +65,97 @@ export default function Home() {
             id="navbar-sticky"
           >
             <ul className="flex flex-col font-medium gap-10 border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li className="cursor-pointer hover:bg-[#f4f4eb]">
+              <li className="group relative">
                 <Link
                   href="/"
-                  className="block text-[14px] font-semibold text-white md:bg-transparent"
+                  className="block text-[14px] font-semibold hover:opacity-50 text-white"
                 >
                   ALL PAGES
                 </Link>
+                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white z-50 border-2 w-[500px] h-auto rounded-[15px] p-6 absolute right-0  top-[20px] left-0">
+                  <div className="flex flex-col items-center justify-start w-full gap-4">
+                    <Link
+                      href="/"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      HOMEPAGE
+                    </Link>
+                    <Link
+                      href="/about"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      ABOUT
+                    </Link>
+                    <Link
+                      href="/service"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      SERVICE
+                    </Link>
+                    <Link
+                      href="/factory"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      SERVICE DETAILS
+                    </Link>
+
+                    <Link
+                      href="/projects"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      PROJECTS
+                    </Link>
+
+                    <Link
+                      href="/contemporary"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      PROJECTS DETAILS
+                    </Link>
+                  </div>
+                  <div className="flex flex-col items-center justify-start w-full gap-4">
+                    <Link
+                      href="/blog"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      BLOG
+                    </Link>
+                    <Link
+                      href="/about"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      BLOG DETAILS
+                    </Link>
+                    <Link
+                      href="/team"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      TEAM
+                    </Link>
+                    <Link
+                      href="/testimonials"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      TESTIMONIALS
+                    </Link>
+
+                    <Link
+                      href="/contact"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      contact
+                    </Link>
+
+                    <Link
+                      href="/404"
+                      className="block w-full h-full text-[14px] font-semibold text-black"
+                    >
+                      404
+                    </Link>
+                  </div>
+                </div>
               </li>
-              <li className="cursor-pointer hover:bg-[#f4f4eb]">
+              <li className="cursor-pointer hover:opacity-50">
                 <Link
                   href="/about"
                   className="block w-full h-full text-[14px] font-semibold text-white"
@@ -81,7 +163,7 @@ export default function Home() {
                   ABOUT
                 </Link>
               </li>
-              <li className="cursor-pointer hover:bg-[#f4f4eb]">
+              <li className="cursor-pointer hover:opacity-50">
                 <Link
                   href="/services"
                   className="block w-full h-full text-[14px] font-semibold text-white"
@@ -89,7 +171,7 @@ export default function Home() {
                   SERVICES
                 </Link>
               </li>
-              <li className="cursor-pointer hover:bg-[#f4f4eb]">
+              <li className="cursor-pointer hover:opacity-50">
                 <Link
                   href="/appointment"
                   className="block w-full h-full text-[14px] font-semibold text-white"
@@ -102,7 +184,7 @@ export default function Home() {
         </div>
       </nav>
       <header className="w-full flex flex-col items-center justify-center lg:h-[120vh] lg:pt-[240px] lg:pb-[220px] pt-[110px] pb-[90px] px-2 relative">
-        <div className="lg:max-w-[1280px] max-w-[390px] flex flex-col items-start justify-start z-20 gap-8">
+        <div className="lg:max-w-[1280px] max-w-[390px] flex flex-col items-start justify-start z-10 gap-8">
           <div className="flex flex-row items-start justify-start lg:w-[56%] gap-8">
             <div className="flex flex-col items-start justify-start w-full gap-6">
               <div className="w-full">
@@ -797,8 +879,8 @@ export default function Home() {
                 Trusted by 10,000+ customers
               </p>
             </div>
-            <div className="w-full lg:w-[77%]">
-              <p className="text-[16px] text-[#3b3b3b] text-center font-semibold leading-[1.7em]">
+            <div className="w-full lg:w-[64%]">
+              <p className="text-base text-[#3b3b3b] text-center font-normal leading-[1.7em]">
                 Explore the core mission and vision that drives us every day. At
                 Behind the Stories Company, we're not just about cleaning homes.
               </p>
@@ -1163,8 +1245,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center pb-8 border-b">
-            <h2 className="text-[286px] text-black font-semibold leading-[1.12em]">
+          <div className="flex flex-col items-center justify-center pb-8 border-b w-full">
+            <h2 className="lg:text-[286px] md:text-[140px] text-[75px] text-black font-semibold leading-[1.12em]">
               Next_Gen
             </h2>
           </div>
