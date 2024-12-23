@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <nav className="absolute top-0 right-0 left-0 z-20">
-        <div className="lg:max-w-[1280px] max-w-[390px] flex flex-wrap items-center justify-between mx-auto lg:pt-[28px] lg:pb-[29px] lg:px-[30px] py-0 px-[15px] lg:h-auto h-[68px]">
+      <nav className="absolute top-0 right-0 left-0 z-20 lg:pt-[28px] lg:pb-[29px] lg:px-[30px] py-0 px-[15px]">
+        <div className="lg:max-w-[1280px] max-w-[390px] flex flex-wrap items-center justify-between mx-auto lg:h-auto h-[68px]">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <a className="lg:flex flex-row items-center justify-center hidden bg-[#fed545] py-2 pl-5 pr-2 gap-3 rounded-[80px] group hover:bg-white">
               <div>
-                <p className="text-base font-semibold text-black leading-[1.7em] ">
+                <p className="text-base font-normal text-black leading-[1.7em] ">
                   BOOK A MEETING
                 </p>
               </div>
@@ -65,50 +65,66 @@ export default function Home() {
             id="navbar-sticky"
           >
             <ul className="flex flex-col font-medium gap-10 border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li className="group relative">
+              <li className=" relative group flex flex-row items-center justify-center gap-[5px]">
                 <Link
                   href="/"
-                  className="block text-[14px] font-semibold hover:opacity-50 text-white"
+                  className="block text-[14px] font-normal hover:opacity-50 text-white"
                 >
                   ALL PAGES
                 </Link>
-                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white z-50 border-2 w-[500px] h-auto rounded-[15px] p-6 absolute right-0  top-[20px] left-0">
+                <div className="flex flex-col items-center w-4 h-4 justify-center transform group-hover:rotate-180 duration-150">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-full h-full"
+                    stroke="#fff"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white z-50 border-2 w-[500px] h-auto rounded-[15px] p-6 absolute right-0 top-[20px] left-0">
                   <div className="flex flex-col items-center justify-start w-full gap-4">
                     <Link
                       href="/"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       HOMEPAGE
                     </Link>
                     <Link
                       href="/about"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       ABOUT
                     </Link>
                     <Link
                       href="/service"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       SERVICE
                     </Link>
                     <Link
                       href="/factory"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       SERVICE DETAILS
                     </Link>
 
                     <Link
                       href="/projects"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       PROJECTS
                     </Link>
 
                     <Link
                       href="/contemporary"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       PROJECTS DETAILS
                     </Link>
@@ -116,39 +132,39 @@ export default function Home() {
                   <div className="flex flex-col items-center justify-start w-full gap-4">
                     <Link
                       href="/blog"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       BLOG
                     </Link>
                     <Link
                       href="/about"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       BLOG DETAILS
                     </Link>
                     <Link
                       href="/team"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       TEAM
                     </Link>
                     <Link
                       href="/testimonials"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       TESTIMONIALS
                     </Link>
 
                     <Link
                       href="/contact"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       contact
                     </Link>
 
                     <Link
                       href="/404"
-                      className="block w-full h-full text-[14px] font-semibold text-black"
+                      className="block w-full h-full text-[14px] font-normal text-black"
                     >
                       404
                     </Link>
@@ -158,7 +174,7 @@ export default function Home() {
               <li className="cursor-pointer hover:opacity-50">
                 <Link
                   href="/about"
-                  className="block w-full h-full text-[14px] font-semibold text-white"
+                  className="block w-full h-full text-[14px] font-normal text-white"
                 >
                   ABOUT
                 </Link>
@@ -166,7 +182,7 @@ export default function Home() {
               <li className="cursor-pointer hover:opacity-50">
                 <Link
                   href="/services"
-                  className="block w-full h-full text-[14px] font-semibold text-white"
+                  className="block w-full h-full text-[14px] font-normal text-white"
                 >
                   SERVICES
                 </Link>
@@ -174,7 +190,7 @@ export default function Home() {
               <li className="cursor-pointer hover:opacity-50">
                 <Link
                   href="/appointment"
-                  className="block w-full h-full text-[14px] font-semibold text-white"
+                  className="block w-full h-full text-[14px] font-normal text-white"
                 >
                   CONTACT
                 </Link>
@@ -188,7 +204,7 @@ export default function Home() {
           <div className="flex flex-row items-start justify-start lg:w-[56%] gap-8">
             <div className="flex flex-col items-start justify-start w-full gap-6">
               <div className="w-full">
-                <h1 className="lg:text-[76px] lg:text-left text-[37px] text-center font-semibold leading-[1.2em] text-white">
+                <h1 className="lg:text-[76px] lg:text-left text-[37px] text-center font-normal leading-[1.2em] text-white">
                   Crafting Vision with Precision, Building Dream Home.
                 </h1>
               </div>
@@ -205,7 +221,7 @@ export default function Home() {
             <div className="flex mx-auto h-fit relative">
               <a className="flex flex-row items-center justify-center bg-[#fed545] py-2 pl-5 pr-2 gap-3 rounded-[80px] group hover:bg-white">
                 <div>
-                  <p className="text-base font-semibold text-black leading-[1.7em] ">
+                  <p className="text-base font-normal text-black leading-[1.7em] ">
                     BOOK A MEETING
                   </p>
                 </div>
@@ -222,7 +238,7 @@ export default function Home() {
             <div className="flex mx-auto h-fit relative">
               <a className="flex flex-row items-center hover:bg-[#fed545] hover:text-black justify-center bg-transparent border-[1.5px] border-white py-[14px] px-6 gap-3 rounded-[80px] group ">
                 <div>
-                  <p className="text-base font-semibold text-white leading-[1.7em]  ">
+                  <p className="text-base font-normal text-white leading-[1.7em]  ">
                     EXPLORE SERVICES
                   </p>
                 </div>
@@ -252,7 +268,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center justify-start gap-[10px]">
                   <div className="w-full">
-                    <p className="text-xl text-black font-semibold leading-[1.7em]">
+                    <p className="text-xl text-black font-normal leading-[1.7em]">
                       Handled by Professionals
                     </p>
                   </div>
@@ -276,7 +292,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center justify-start gap-[10px]">
                   <div className="w-full">
-                    <p className="text-xl text-black font-semibold leading-[1.7em]">
+                    <p className="text-xl text-black font-normal leading-[1.7em]">
                       Unlimited Meetings
                     </p>
                   </div>
@@ -300,7 +316,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center justify-start gap-[10px]">
                   <div className="w-full">
-                    <p className="text-xl text-black font-semibold leading-[1.7em]">
+                    <p className="text-xl text-black font-normal leading-[1.7em]">
                       24/7 Support Team{" "}
                     </p>
                   </div>
@@ -350,7 +366,7 @@ export default function Home() {
           <div className="flex flex-1 flex-col items-center justify-center gap-8 lg:gap-[82px] my-auto">
             <div className="flex flex-col items-center justify-center gap-[20px]">
               <div>
-                <h2 className="text-[35px] lg:text-[54px] text-black lg:text-left text-center font-semibold leading-[1.2em]">
+                <h2 className="text-[35px] lg:text-[54px] text-black lg:text-left text-center font-normal leading-[1.2em]">
                   Finest Architectural Design Team With Great Passion.
                 </h2>
               </div>
@@ -366,7 +382,7 @@ export default function Home() {
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center gap-6">
                 <div className="flex flex-col items-center justify-center flex-1">
                   <div className="w-full">
-                    <p className="text-[20px] text-black lg:text-left text-center font-semibold leading-[1.2em]">
+                    <p className="text-[20px] text-black lg:text-left text-center font-normal leading-[1.2em]">
                       Extraordinary Service
                     </p>
                   </div>
@@ -379,7 +395,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center justify-center flex-1">
                   <div className="w-full">
-                    <p className="text-[20px] text-black lg:text-left text-center font-semibold leading-[1.2em]">
+                    <p className="text-[20px] text-black lg:text-left text-center font-normal leading-[1.2em]">
                       Expert Advices
                     </p>
                   </div>
@@ -394,7 +410,7 @@ export default function Home() {
               <div className="flex flex-col lg:items-start lg:justify-start w-full items-center justify-center">
                 <a className="flex flex-row pt-[10px] pr-[8px] pb-[10px] pl-[20px] items-center border-[1.5px] border-black  hover:bg-[#fed545] hover:border-[#fed545] hover:text-black justify-center bg-transparent py-[14px] px-6 gap-3 rounded-[80px] group ">
                   <div>
-                    <p className="text-base font-semibold text-black leading-[1.7em]  ">
+                    <p className="text-base font-normal text-black leading-[1.7em]  ">
                       LEARN MORE
                     </p>
                   </div>
@@ -416,7 +432,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-center">
             <div className="w-full lg:w-[49%]">
-              <p className="text-4xl lg:text-[54px] text-black text-center font-semibold leading-[1.2em]">
+              <p className="text-4xl lg:text-[54px] text-black text-center font-normal leading-[1.2em]">
                 We provide solutions that can make you happy
               </p>
             </div>
@@ -433,7 +449,7 @@ export default function Home() {
               <div className="flex flex-col items-start justify-start gap-">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
-                    <p className="text-[20px] text-black text-left font-semibold leading-[1.2em]">
+                    <p className="text-[20px] text-black text-left font-normal leading-[1.2em]">
                       Construction
                     </p>
                   </div>
@@ -448,7 +464,7 @@ export default function Home() {
                 <div className="flex flex-col items-start justify-start w-full pt-6">
                   <a className="flex flex-row pt-[10px] pr-[8px] pb-[10px] pl-[20px] items-center border-[1.5px] border-black  hover:bg-[#fed545] hover:border-[#fed545] hover:text-black justify-center bg-transparent py-[14px] px-6 gap-3 rounded-[80px] group ">
                     <div>
-                      <p className="text-base font-semibold text-black leading-[1.7em]  ">
+                      <p className="text-base font-normal text-black leading-[1.7em]  ">
                         LEARN MORE
                       </p>
                     </div>
@@ -476,7 +492,7 @@ export default function Home() {
               <div className="flex flex-col items-start justify-start gap-">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
-                    <p className="text-[20px] text-black text-left font-semibold leading-[1.2em]">
+                    <p className="text-[20px] text-black text-left font-normal leading-[1.2em]">
                       Renovation{" "}
                     </p>
                   </div>
@@ -491,7 +507,7 @@ export default function Home() {
                 <div className="flex flex-col items-start justify-start w-full pt-6">
                   <a className="flex flex-row pt-[10px] pr-[8px] pb-[10px] pl-[20px] items-center border-[1.5px] border-black  hover:bg-[#fed545] hover:border-[#fed545] hover:text-black justify-center bg-transparent py-[14px] px-6 gap-3 rounded-[80px] group ">
                     <div>
-                      <p className="text-base font-semibold text-black leading-[1.7em]  ">
+                      <p className="text-base font-normal text-black leading-[1.7em]  ">
                         LEARN MORE
                       </p>
                     </div>
@@ -519,7 +535,7 @@ export default function Home() {
               <div className="flex flex-col items-start justify-start gap-">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
-                    <p className="text-[20px] text-black text-left font-semibold leading-[1.2em]">
+                    <p className="text-[20px] text-black text-left font-normal leading-[1.2em]">
                       Consultation{" "}
                     </p>
                   </div>
@@ -534,7 +550,7 @@ export default function Home() {
                 <div className="flex flex-col items-start justify-start w-full pt-6">
                   <a className="flex flex-row pt-[10px] pr-[8px] pb-[10px] pl-[20px] items-center border-[1.5px] border-black  hover:bg-[#fed545] hover:border-[#fed545] hover:text-black justify-center bg-transparent py-[14px] px-6 gap-3 rounded-[80px] group ">
                     <div>
-                      <p className="text-base font-semibold text-black leading-[1.7em]  ">
+                      <p className="text-base font-normal text-black leading-[1.7em]  ">
                         LEARN MORE
                       </p>
                     </div>
@@ -558,7 +574,7 @@ export default function Home() {
           <div className="flex flex-1 flex-col items-center justify-center gap-8 lg:gap-[82px] my-auto">
             <div className="flex flex-col items-center justify-center gap-[20px]">
               <div>
-                <h2 className="text-[35px] lg:text-[54px] text-black lg:text-left text-center font-semibold leading-[1.2em]">
+                <h2 className="text-[35px] lg:text-[54px] text-black lg:text-left text-center font-normal leading-[1.2em]">
                   Elevating Standard in Construction Excellence.
                 </h2>
               </div>
@@ -574,7 +590,7 @@ export default function Home() {
             <div className="flex flex-col lg:items-start lg:justify-start w-full items-center justify-center">
               <a className="flex flex-row pt-[10px] pr-[8px] pb-[10px] pl-[20px] items-center border-[1.5px] border-black  hover:bg-[#fed545] hover:border-[#fed545] hover:text-black justify-center bg-transparent py-[14px] px-6 gap-3 rounded-[80px] group ">
                 <div>
-                  <p className="text-base font-semibold text-black leading-[1.7em]">
+                  <p className="text-base font-normal text-black leading-[1.7em]">
                     LEARN MORE
                   </p>
                 </div>
@@ -619,12 +635,12 @@ export default function Home() {
                 <div className="flex flex-col items-center justify-center p-5 absolute gap-4 h-[256px] w-[40%] left-4 bottom-0 bg-[#fed545]">
                   <div className="flex flex-col items-center justify-center w-full">
                     <div className="flex flex-row items-center justify-start w-full">
-                      <div className="flex flex-row items-start justify-start font-semibold lg:text-[54px] text-4xl text-black leading-[1.2em]">
+                      <div className="flex flex-row items-start justify-start font-normal lg:text-[54px] text-4xl text-black leading-[1.2em]">
                         12
                       </div>
 
                       <div className="flex flex-row items-start justify-start flex-1">
-                        <h2 className="font-semibold lg:text-[54px] text-4xl text-black leading-[1.2em]">
+                        <h2 className="font-normal lg:text-[54px] text-4xl text-black leading-[1.2em]">
                           K+
                         </h2>
                       </div>
@@ -637,12 +653,12 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center justify-center w-full">
                     <div className="flex flex-row items-center justify-center w-full">
-                      <div className="flex flex-row items-start justify-start font-semibold lg:text-[54px] text-4xl text-black leading-[1.2em]">
+                      <div className="flex flex-row items-start justify-start font-normal lg:text-[54px] text-4xl text-black leading-[1.2em]">
                         17
                       </div>
 
                       <div className="flex flex-row items-start justify-start flex-1">
-                        <h2 className="font-semibold lg:text-[54px] text-4xl text-black leading-[1.2em]">
+                        <h2 className="font-normal lg:text-[54px] text-4xl text-black leading-[1.2em]">
                           +
                         </h2>
                       </div>
@@ -673,7 +689,7 @@ export default function Home() {
             <div className="flex flex-col items-start justify-start w-full lg:gap-9 gap-[16px]">
               <div className="flex flex-row items-center justify-between w-full gap-[34px]">
                 <div className="flex flex-col items-center justify-center w-fit">
-                  <h2 className="text-4xl text-[54px] font-semibold text-white leading-[1.2em]">
+                  <h2 className="text-4xl text-[54px] font-normal text-white leading-[1.2em]">
                     01
                   </h2>
                 </div>
@@ -681,7 +697,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-start justify-start lg:w-[73%] gap-5">
                 <div className="w-full pt-[8px] pb-[10px]">
-                  <p className="text-[20px] text-white text-left font-semibold leading-[1.2em]">
+                  <p className="text-[20px] text-white text-left font-normal leading-[1.2em]">
                     Book A Meeting
                   </p>
                 </div>
@@ -696,7 +712,7 @@ export default function Home() {
             <div className="flex flex-col items-start justify-start w-full lg:gap-9 gap-[16px]">
               <div className="flex flex-row items-center justify-between w-full gap-[34px]">
                 <div className="flex flex-col items-center justify-center w-fit">
-                  <h2 className="text-4xl text-[54px] font-semibold text-white leading-[1.2em]">
+                  <h2 className="text-4xl text-[54px] font-normal text-white leading-[1.2em]">
                     02
                   </h2>
                 </div>
@@ -704,7 +720,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-start justify-start lg:w-[73%] gap-5">
                 <div className="w-full pt-[8px] pb-[10px]">
-                  <p className="text-[20px] text-white text-left font-semibold leading-[1.2em]">
+                  <p className="text-[20px] text-white text-left font-normal leading-[1.2em]">
                     Start Project
                   </p>
                 </div>
@@ -720,7 +736,7 @@ export default function Home() {
             <div className="flex flex-col items-start justify-start w-full lg:gap-9 gap-[16px]">
               <div className="flex flex-row items-center justify-between w-full gap-[34px]">
                 <div className="flex flex-col items-center justify-center w-fit">
-                  <h2 className="text-4xl text-[54px] font-semibold text-white leading-[1.2em]">
+                  <h2 className="text-4xl text-[54px] font-normal text-white leading-[1.2em]">
                     03
                   </h2>
                 </div>
@@ -736,7 +752,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-start justify-start lg:w-[73%] gap-5">
                 <div className="w-full pt-[8px] pb-[10px]">
-                  <p className="text-[20px] text-white text-left font-semibold leading-[1.2em]">
+                  <p className="text-[20px] text-white text-left font-normal leading-[1.2em]">
                     Get Done on Time
                   </p>
                 </div>
@@ -839,7 +855,7 @@ export default function Home() {
           <div className="flex flex-1 flex-col items-center justify-center gap-8 lg:gap-[82px] my-auto lg:w-[35%]">
             <div className="flex flex-col items-center justify-center gap-[20px]">
               <div>
-                <h2 className="text-[35px] lg:text-[54px] text-black lg:text-left text-center font-semibold leading-[1.2em]">
+                <h2 className="text-[35px] lg:text-[54px] text-black lg:text-left text-center font-normal leading-[1.2em]">
                   Dive Into Our Signature Work.{" "}
                 </h2>
               </div>
@@ -854,7 +870,7 @@ export default function Home() {
             <div className="flex flex-col lg:items-start lg:justify-start w-full items-center justify-center">
               <a className="flex flex-row pt-[10px] pr-[8px] pb-[10px] pl-[20px] items-center border-[1.5px] border-black  hover:bg-[#fed545] hover:border-[#fed545] hover:text-black justify-center bg-transparent py-[14px] px-6 gap-3 rounded-[80px] group ">
                 <div>
-                  <p className="text-base font-semibold text-black leading-[1.7em]  ">
+                  <p className="text-base font-normal text-black leading-[1.7em]  ">
                     LEARN MORE
                   </p>
                 </div>
@@ -875,7 +891,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-center gap-5">
             <div className="w-full lg:w-full">
-              <p className="text-[54px] text-black text-center font-semibold leading-[1.2em]">
+              <p className="text-[54px] text-black text-center font-normal leading-[1.2em]">
                 Trusted by 10,000+ customers
               </p>
             </div>
@@ -901,7 +917,7 @@ export default function Home() {
                       </div>
                       <div className="flex flex-col items-start justify-between">
                         <div className="flex flex-col">
-                          <p className="text-2xl text-black font-semibold leading-[1.4em]">
+                          <p className="text-2xl text-black font-normal leading-[1.4em]">
                             Andy Smith
                           </p>
                         </div>
@@ -986,7 +1002,7 @@ export default function Home() {
                       </div>
                       <div className="flex flex-col items-start justify-between">
                         <div className="flex flex-col">
-                          <p className="text-2xl text-black font-semibold leading-[1.4em]">
+                          <p className="text-2xl text-black font-normal leading-[1.4em]">
                             Andy Smith
                           </p>
                         </div>
@@ -1063,7 +1079,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-center gap-5">
             <div className="w-full lg:w-full">
-              <p className="text-4xl lg:text-[54px] text-black text-center font-semibold leading-[1.2em]">
+              <p className="text-4xl lg:text-[54px] text-black text-center font-normal leading-[1.2em]">
                 Latest News & Insights
               </p>
             </div>
@@ -1087,7 +1103,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <p className="text-2xl text-white font-semibold leading-[1.4em]">
+                  <p className="text-2xl text-white font-normal leading-[1.4em]">
                     10 Essential Steps to Building Your Home from Scratch
                   </p>
                 </div>
@@ -1112,7 +1128,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <p className="text-2xl text-white font-semibold leading-[1.4em]">
+                  <p className="text-2xl text-white font-normal leading-[1.4em]">
                     Choosing the Right Contractor Key Questions to Ask
                   </p>
                 </div>
@@ -1137,7 +1153,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <p className="text-2xl text-white font-semibold leading-[1.4em]">
+                  <p className="text-2xl text-white font-normal leading-[1.4em]">
                     Eco-Friendly Building Materials: How to Create a Sustainable
                     Home{" "}
                   </p>
@@ -1176,14 +1192,14 @@ export default function Home() {
               <div className="h-[121px] w-[255px] -rotate-[40deg] left-[-99px] lg:left-[-72px] lg:top-[-45px] top-[-50px] flex flex-row items-center justify-center absolute bg-white"></div>
               <div className="flex flex-col items-center justify- lg:ml-[56px] z-10 mt-auto lg:w-[36%] w-full gap-5 pt-[40px] pb-[60px] px-0">
                 <div className="flex flex-col items-center justify-center w-full">
-                  <h2 className="text-4xl lg:text-[50px] text-black lg:text-left text-center font-semibold leading-[1.2em] w-full">
+                  <h2 className="text-4xl lg:text-[50px] text-black lg:text-left text-center font-normal leading-[1.2em] w-full">
                     Let’s Start Your Project Today!
                   </h2>
                 </div>
                 <div className="flex flex-col lg:items-start lg:justify-start w-full items-center justify-center">
                   <a className="flex flex-row pt-[10px] pr-[8px] pb-[10px] pl-[20px] items-center border-[1.5px] border-black  hover:bg-[#fed545] hover:border-[#fed545] hover:text-black justify-center bg-transparent py-[14px] px-6 gap-3 rounded-[80px] group ">
                     <div>
-                      <p className="text-base font-semibold text-black leading-[1.7em]  ">
+                      <p className="text-base font-normal text-black leading-[1.7em]  ">
                         LEARN MORE
                       </p>
                     </div>
@@ -1206,7 +1222,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between items-center justify-center w-full pb-8 border-b">
             <div className="flex flex-col items-center justify-center w-fit whitespace-nowrap">
-              <h3 className="text-[32px] text-black text-left font-semibold leading-[1.4em]">
+              <h3 className="text-[32px] text-black text-left font-normal leading-[1.4em]">
                 We believe in excellence.
               </h3>
             </div>
@@ -1246,7 +1262,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center pb-8 border-b w-full">
-            <h2 className="lg:text-[286px] md:text-[140px] text-[75px] text-black font-semibold leading-[1.12em]">
+            <h2 className="lg:text-[286px] md:text-[140px] text-[75px] text-black font-normal leading-[1.12em]">
               Next_Gen
             </h2>
           </div>
@@ -1260,7 +1276,7 @@ export default function Home() {
               <div className="flex flex-col items-center justify-center w-full">
                 <a
                   href="#"
-                  className="text-base text-black font-semibold leading-[1.7em] hover:opacity-60"
+                  className="text-base text-black font-normal leading-[1.7em] hover:opacity-60"
                 >
                   Terms of serviice
                 </a>
@@ -1268,7 +1284,7 @@ export default function Home() {
               <div className="flex flex-col items-center justify-center w-full">
                 <a
                   href="#"
-                  className="text-base text-black font-semibold leading-[1.7em] hover:opacity-60"
+                  className="text-base text-black font-normal leading-[1.7em] hover:opacity-60"
                 >
                   Privacy Policy
                 </a>

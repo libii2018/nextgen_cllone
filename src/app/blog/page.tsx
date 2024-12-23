@@ -4,8 +4,8 @@ import React from "react";
 export default function Blog() {
   return (
     <>
-      <nav className="absolute top-0 right-0 left-0 z-10">
-        <div className="lg:max-w-[1280px] max-w-[390px] flex flex-wrap items-center justify-between mx-auto lg:pt-[28px] lg:pb-[29px] py-0 lg:h-auto h-[68px]">
+      <nav className="absolute top-0 right-0 left-0 z-10 lg:pt-[28px] lg:pb-[29px] py-0">
+        <div className="lg:max-w-[1280px] max-w-[390px] flex flex-wrap items-center justify-between mx-auto lg:h-auto h-[68px]">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -65,14 +65,30 @@ export default function Blog() {
             id="navbar-sticky"
           >
             <ul className="flex flex-col font-medium gap-10 border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li className="cursor-pointer group relative">
+              <li className="group relative flex flex-row items-center justify-center gap-[5px]">
                 <Link
                   href="/"
-                  className="block text-[14px] font-semibold text-black group-hover:opacity-75 md:bg-transparent"
+                  className="block text-[14px] font-semibold hover:opacity-50 text-black"
                 >
                   ALL PAGES
                 </Link>
-                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white border-2 w-[500px] h-auto rounded-[15px] p-6 absolute right-0 left-0">
+                <div className="flex flex-col items-center w-4 h-4 justify-center transform group-hover:rotate-180 duration-150">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-full h-full"
+                    stroke="#000"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white z-50 border-2 w-[500px] h-auto rounded-[15px] p-6 absolute right-0 top-[20px] left-0">
                   <div className="flex flex-col items-center justify-start w-full gap-4">
                     <Link
                       href="/"

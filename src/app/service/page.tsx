@@ -1,11 +1,17 @@
 import Link from "next/link";
 import React from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function page() {
   return (
     <>
-      <nav className="absolute top-0 right-0 left-0 z-10">
-        <div className="lg:max-w-[1280px] max-w-[390px] flex flex-wrap items-center justify-between mx-auto lg:pt-[28px] lg:pb-[29px] py-0 lg:h-auto h-[68px]">
+      <nav className="absolute top-0 right-0 left-0 z-10 lg:pt-[28px] lg:pb-[29px] py-0">
+        <div className="lg:max-w-[1280px] max-w-[390px] flex flex-wrap items-center justify-between mx-auto lg:h-auto h-[68px]">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -65,14 +71,30 @@ export default function page() {
             id="navbar-sticky"
           >
             <ul className="flex flex-col font-medium gap-10 border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li className="cursor-pointer group relative">
+              <li className="group relative flex flex-row items-center justify-center gap-[5px]">
                 <Link
                   href="/"
-                  className="block text-[14px] font-semibold text-black group-hover:opacity-75 md:bg-transparent"
+                  className="block text-[14px] font-semibold hover:opacity-50 text-black"
                 >
                   ALL PAGES
                 </Link>
-                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white border-2 w-[500px] h-auto rounded-[15px] p-6 absolute right-0 left-0">
+                <div className="flex flex-col items-center w-4 h-4 justify-center transform group-hover:rotate-180 duration-150">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-full h-full"
+                    stroke="#000"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white z-50 border-2 w-[500px] h-auto rounded-[15px] p-6 absolute right-0 top-[20px] left-0">
                   <div className="flex flex-col items-center justify-start w-full gap-4">
                     <Link
                       href="/"
@@ -493,11 +515,58 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-col items-center justify-center gap-8 lg:gap-[82px] my-auto">
-            <div className="flex flex-col items-center justify-center gap-[20px]">
-              <h2 className="text-[35px] lg:text-[40px] text-black lg:text-left text-center font-semibold leading-[1.2em]">
+          <div className="flex flex-1 flex-col items-center justify-center gap-8 lg:gap-[40px] w-full my-auto">
+            <div className="flex flex-col items-start justify-start w-full gap-[20px]">
+              <h2 className="text-[35px] lg:text-[54px] text-black lg:text-left text-center font-semibold leading-[1.2em]">
                 Common Questions
               </h2>
+            </div>
+            <div className="w-full">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>
+                    How do I get a quote for my construction project?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    The timeline for a construction project varies depending on
+                    its scope and complexity. Smaller projects might take a few
+                    weeks, while larger projects could span several months. We
+                    provide a detailed timeline during the initial consultation
+                    and keep you updated throughout the process.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>
+                    What types of construction projects?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    FitLife supports healthy lifestyles with fitness solutions
+                    including personal training, group classes, nutritional
+                    counseling, wellness programs, gym memberships, sports
+                    equipment.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>
+                    Do you provide design services?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Looks like you're giving directions for setting up Qubit. If
+                    you need support refining the process or want to focus on
+                    particular points, feel free to reach out!
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem className="border-none" value="item-4">
+                  <AccordionTrigger>
+                    Are you licensed and insured?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    You're providing a guide on getting started with Qubit. If
+                    you want to refine the instructions or emphasize any part of
+                    the process, I'm here to help!
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </div>
