@@ -1,13 +1,36 @@
+"use client";
+
 import Navbar from "@/components/navbar";
-import Image from "next/image";
-import Link from "next/link";
+import React from "react";
+import { motion } from "framer-motion";
+
+const variants = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:pt-[90px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1128px] max-w-[390px] w-full gap-[40px] lg:gap-[120px]">
+        <motion.div
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1128px] max-w-[390px] w-full gap-[40px] lg:gap-[120px]"
+        >
           <div className="flex flex-col items-center justify-center w-full lg:w-[49%] lg:h-[556px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
               <div className="flex flex-1 h-full w-full relative">
@@ -21,7 +44,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-col items-center justify-center gap-8 lg:gap-[82px] my-auto">
+          <div className="flex flex-1 flex-col items-center justify-center gap-8 lg:gap-[40px] my-auto">
             <div className="flex flex-col items-center justify-center gap-[20px]">
               <div>
                 <h2 className="text-[35px] lg:text-[80px] text-black lg:text-left text-center font-semibold leading-[1.2em]">
@@ -56,10 +79,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center justify-center w-full bg-[#fed545] overflow-hidden">
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center  relative w-full lg:pt-[20px] pt-[60px]">
               <div className="flex flex-col  items-center p-0 justify-center relative h-[204px] lg:h-[637px] lg:w-[987px] w-full">
@@ -111,10 +139,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between items-center justify-center w-full pb-8 border-b">
             <div className="flex flex-col items-center justify-center w-fit whitespace-nowrap">
               <h3 className="text-[32px] text-black text-left font-semibold leading-[1.4em]">
@@ -186,7 +219,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

@@ -1,6 +1,60 @@
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const switzer = localFont({
+  src: [
+    {
+      path: "./switzer/Switzer-Bold.otf",
+    },
+    {
+      path: "./switzer/Switzer-BlackItalic.otf",
+    },
+    {
+      path: "./switzer/Switzer-Extrabold.otf",
+    },
+    {
+      path: "./switzer/Switzer-ExtraboldItalic.otf",
+    },
+    {
+      path: "./switzer/Switzer-Extralight.otf",
+    },
+    {
+      path: "./switzer/Switzer-ExtralightItalic.otf",
+    },
+    {
+      path: "./switzer/Switzer-Italic.otf",
+    },
+    {
+      path: "./switzer/Switzer-Light.otf",
+    },
+    {
+      path: "./switzer/Switzer-LightItalic.otf",
+    },
+    {
+      path: "./switzer/Switzer-Medium.otf",
+    },
+    {
+      path: "./switzer/Switzer-MediumItalic.otf",
+    },
+    {
+      path: "./switzer/Switzer-SemiboldItalic.otf",
+    },
+    {
+      path: "./switzer/Switzer-Regular.otf",
+    },
+    {
+      path: "./switzer/Switzer-Semibold.otf",
+    },
+    {
+      path: "./switzer/Switzer-Thin.otf",
+    },
+    {
+      path: "./switzer/Switzer-ThinItalic.otf",
+    },
+  ],
+});
 
 const workSans = Work_Sans({
   variable: "--font-work-mono",
@@ -20,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link href="https://fonts.cdnfonts.com/css/switzer" rel="stylesheet" />
-      <body className={workSans.className}>{children}</body>
+      <body className={switzer.className}>{children}</body>
     </html>
   );
 }

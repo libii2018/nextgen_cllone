@@ -1,19 +1,44 @@
-import Link from "next/link";
+"use client";
+
+import Navbar from "@/components/navbar";
 import React from "react";
+import { motion } from "framer-motion";
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Navbar from "@/components/navbar";
+
+const variants = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function Contemporary() {
   return (
     <>
       <Navbar />
       <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[90px] lg:px-[30px] lg:pb-[30px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center w-full justify-center">
             <div className="flex flex-col items-center justify-center w-full gap-5 pb-16">
               <h1 className="text-4xl lg:text-[80px] text-black text-center font-semibold leading-[1.2em]">
@@ -28,10 +53,16 @@ export default function Contemporary() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:px-[30px] lg:pb-[60px] w-full">
-        <div className="flex flex-col items-start justify-center lg:w-[59%] w-full">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-start justify-center lg:w-[59%] w-full"
+        >
           <h3 className="text-[32px] text-black font-semibold leading-[1.4em] mb-7">
             Project Overview:
           </h3>
@@ -84,10 +115,16 @@ export default function Contemporary() {
             alt=""
             className="aspect-[1920/1154] w-full h-auto mb-7"
           />
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[30px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]"
+        >
           <div className="flex flex-col items-center justify-center w-full lg:w-[47%] lg:h-[657px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
               <div
@@ -171,10 +208,16 @@ export default function Contemporary() {
               </Accordion>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center justify-center w-full bg-[#fed545] overflow-hidden">
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center  relative w-full lg:pt-[20px] pt-[60px]">
               <div className="flex flex-col  items-center p-0 justify-center relative h-[204px] lg:h-[637px] lg:w-[987px] w-full">
@@ -226,10 +269,16 @@ export default function Contemporary() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col md:flex-col lg:flex-row lg:items-center lg:justify-between items-center justify-center w-full pb-8 border-b">
             <div className="flex flex-col items-center justify-center w-fit whitespace-nowrap">
               <h3 className="text-[32px] text-black text-left font-semibold leading-[1.4em]">
@@ -301,7 +350,7 @@ export default function Contemporary() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

@@ -1,13 +1,37 @@
+"use client";
+
 import Navbar from "@/components/navbar";
-import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+
+const variants = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function Blogsingle() {
   return (
     <>
       <Navbar />
       <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[90px] lg:px-[30px] lg:pb-[60px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center justify-start w-full">
             <div className="flex flex-col items-center justify-center py-[2px] px-[10px] mr-auto bg-[#fed545] rounded-[40px] mb-5">
               <p className="text-sm text-black font-medium leading-[1.7em]">
@@ -28,10 +52,16 @@ export default function Blogsingle() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:px-[30px] lg:pb-[60px] w-full">
-        <div className="flex flex-col items-start justify-center lg:w-[59%] w-full">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-start justify-center lg:w-[59%] w-full"
+        >
           <h3 className="text-[32px] text-black font-semibold leading-[1.4em] mb-7">
             Introduction
           </h3>
@@ -137,10 +167,16 @@ export default function Blogsingle() {
             timeless styles, ensuring there's something for everyone looking to
             refresh their space.
           </p>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center justify-center w-full bg-[#fed545] overflow-hidden">
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center  relative w-full lg:pt-[20px] pt-[60px]">
               <div className="flex flex-col  items-center p-0 justify-center relative h-[204px] lg:h-[637px] lg:w-[987px] w-full">
@@ -192,10 +228,16 @@ export default function Blogsingle() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col md:flex-col lg:flex-row lg:items-center lg:justify-between items-center justify-center w-full pb-8 border-b">
             <div className="flex flex-col items-center justify-center w-fit whitespace-nowrap">
               <h3 className="text-[32px] text-black text-left font-semibold leading-[1.4em]">
@@ -267,7 +309,7 @@ export default function Blogsingle() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

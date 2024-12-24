@@ -1,4 +1,23 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const variants = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function Home() {
   return (
@@ -215,14 +234,14 @@ export default function Home() {
       </nav>
       <header className="w-full flex flex-col items-center justify-center h-fit lg:pt-[240px] lg:pb-[220px] pt-[110px] pb-[90px] px-2 relative">
         <div className="lg:max-w-[1280px] max-w-[390px] flex flex-col items-start justify-start z-10 gap-8">
-          <div className="flex flex-row items-start justify-start lg:w-[56%] gap-8">
+          <div className="flex flex-row items-start justify-start lg:w-[58%] gap-8">
             <div className="flex flex-col items-start justify-start w-full gap-6">
               <div className="w-full">
                 <h1 className="lg:text-[80px] lg:text-left text-[37px] text-center font-semibold leading-[1.2em] text-white">
                   Crafting Vision with Precision, Building Dream Home.
                 </h1>
               </div>
-              <div className="w-full lg:w-[72%]">
+              <div className="w-full lg:w-[62%]">
                 <p className="lg:text-[18px] lg:text-left text-center font-light leading-[1.7em] text-white">
                   With a legacy of excellence and a team of dedicated
                   professionals, we transform visions into reality, ensuring
@@ -268,10 +287,16 @@ export default function Home() {
           />
         </div>
       </header>
-      <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[63px] lg:px-[30px] w-full bg-[#f6f7f9]">
+      <div className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[63px] lg:px-[30px] w-full bg-[#f6f7f9]">
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full">
           <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-[32px] lg:gap-[73px] lg:w-[96%]">
-            <div className="flex flex-col items-center justify-center w-full">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={variants}
+              viewport={{ once: true }}
+              className="flex flex-col items-center justify-center w-full"
+            >
               <div className="flex flex-row items-start justify-center w-full gap-[33px]">
                 <div className="flex flex-row flex-none items-center justify-center w-[50px] h-[50px] rounded-[100%] bg-[#fed545]">
                   <img
@@ -294,8 +319,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-center justify-center w-full">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={variants}
+              viewport={{ once: true }}
+              className="flex flex-col items-center justify-center w-full"
+            >
               <div className="flex flex-row items-start justify-center w-full gap-[33px]">
                 <div className="flex flex-row flex-none items-center justify-center w-[50px] h-[50px] rounded-[100%] bg-[#fed545]">
                   <img
@@ -318,8 +349,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-center justify-center w-full">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={variants}
+              viewport={{ once: true }}
+              className="flex flex-col items-center justify-center w-full"
+            >
               <div className="flex flex-row items-start justify-center w-full gap-[33px]">
                 <div className="flex flex-row flex-none items-center justify-center w-[50px] h-[50px] rounded-[100%] bg-[#fed545]">
                   <img
@@ -342,12 +379,18 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </div>
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]"
+        >
           <div className="flex flex-col items-center justify-center w-full lg:w-[47%] lg:h-[657px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
               <div
@@ -440,10 +483,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-[#f6f7f9] py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center justify-center">
             <div className="w-full lg:w-[49%]">
               <p className="text-4xl lg:text-[54px] text-black text-center font-semibold leading-[1.2em]">
@@ -581,10 +630,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[178px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[178px]"
+        >
           <div className="flex flex-1 flex-col items-center justify-center gap-8 lg:gap-[82px] my-auto">
             <div className="flex flex-col items-center justify-center gap-[20px]">
               <div>
@@ -687,10 +742,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:pt-[510px] lg:px-[30px] lg:pb-[120] relative w-full overflow-hidden">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-ceitems-center items-center justify-center lg:max-w-[1600px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col lg:flex-row lg:items-center lg:justify-ceitems-center items-center justify-center lg:max-w-[1600px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]"
+        >
           <div className="absolute inset-0">
             <img
               src="https://framerusercontent.com/images/o5ZOrnK8nIYyBEWMMRcZLyO2w.png"
@@ -778,10 +839,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:px-14 lg:flex-row lg:items-center lg:justify-center items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[184px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col lg:px-14 lg:flex-row lg:items-center lg:justify-center items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[184px]"
+        >
           <div className="flex flex-col items-center justify-center w-full relative lg:w-[41%] lg:h-[520px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
               <div
@@ -899,10 +966,16 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-[#f6f7f9] py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center justify-center gap-5">
             <div className="w-full lg:w-full">
               <p className="text-[54px] text-black text-center font-semibold leading-[1.2em]">
@@ -1087,10 +1160,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center justify-center gap-5">
             <div className="w-full lg:w-full">
               <p className="text-4xl lg:text-[54px] text-black text-center font-normal leading-[1.2em]">
@@ -1175,10 +1254,16 @@ export default function Home() {
               </div>
             </a>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col items-center justify-center w-full bg-[#fed545] overflow-hidden">
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center  relative w-full lg:pt-[20px] pt-[60px]">
               <div className="flex flex-col  items-center p-0 justify-center relative h-[204px] lg:h-[637px] lg:w-[987px] w-full">
@@ -1230,10 +1315,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]"
+        >
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between items-center justify-center w-full pb-8 border-b">
             <div className="flex flex-col items-center justify-center w-fit whitespace-nowrap">
               <h3 className="text-[32px] text-black text-left font-semibold leading-[1.4em]">
@@ -1305,7 +1396,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

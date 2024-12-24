@@ -1,12 +1,34 @@
+"use client";
+
 import Navbar from "@/components/navbar";
 import React from "react";
+import { motion } from "framer-motion";
+
+const variants = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function About() {
   return (
     <>
       <Navbar />
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[80px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1296px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
+        <motion.div initial="hidden"
+          whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }} className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1296px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
           <div className="flex flex-col items-center justify-center w-full lg:w-[50%] lg:h-[657px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
               <div
@@ -62,10 +84,12 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-[#f6f7f9] py-[60px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
+        <motion.div whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}  className="flex flex-col lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
           <div className="flex flex-col items-center justify-center w-full">
             <h2 className="text-3xl text-black text-center font-semibold leading-[1.2em]">
               Great Experience Build Great Brands
@@ -138,10 +162,12 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:flex-row-reverse lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[178px]">
+        <motion.div whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}  className="flex flex-col lg:flex-row-reverse lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[178px]">
           <div className="flex flex-col items-center justify-center w-full lg:w-[47%] lg:h-[556px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
               <div
@@ -242,10 +268,12 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-[#f6f7f9] py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}  className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-center gap-5">
             <div className="w-full lg:w-full">
               <p className="text-[54px] text-black text-center font-semibold leading-[1.2em]">
@@ -430,10 +458,12 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
+        <motion.div whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}  className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
           <div className="flex flex-1 flex-col w-full items-center lg:items-start justify-center lg:justify-start gap-8 lg:gap-[43px]">
             <div className="flex flex-col items-center w-full justify-center gap-[20px]">
               <div className="w-full">
@@ -566,10 +596,12 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}  className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-center w-full bg-[#fed545] overflow-hidden">
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center  relative w-full lg:pt-[20px] pt-[60px]">
               <div className="flex flex-col  items-center p-0 justify-center relative h-[204px] lg:h-[637px] lg:w-[987px] w-full">
@@ -621,10 +653,12 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center bg-white py-[60px] px-[20px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
+        <motion.div whileInView="visible"
+          variants={variants}
+          viewport={{ once: true }}  className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between items-center justify-center w-full pb-8 border-b">
             <div className="flex flex-col items-center justify-center w-fit whitespace-nowrap">
               <h3 className="text-[32px] text-black text-left font-semibold leading-[1.4em]">
@@ -696,7 +730,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
