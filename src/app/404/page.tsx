@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:pt-[200px] lg:px-[30px] w-full">
+      <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:pt-[90px] lg:px-[30px] w-full">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1128px] max-w-[390px] w-full gap-[40px] lg:gap-[120px]">
           <div className="flex flex-col items-center justify-center w-full lg:w-[49%] lg:h-[556px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">

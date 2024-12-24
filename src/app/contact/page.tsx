@@ -6,31 +6,31 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[130px] lg:px-[30px] lg:pb-[60px] w-full">
+      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[90px] lg:px-[30px] lg:pb-[60px] w-full">
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[60px]">
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center w-full gap-5">
               <div className="w-full">
                 <h1 className="text-4xl lg:text-[80px] text-black text-center font-semibold leading-[1.2em]">
-                  Trusted by 5,600+ customers
+                  Get In Touch
                 </h1>
               </div>
-              <div className="w-full lg:w-[51%]">
+              <div className="w-full lg:w-[720px]">
                 <p className="text-lg text-[#3b3b3b] text-center font-normal leading-[1.7em]">
-                  Explore the core mission and vision that drives us every day.
-                  At Behind the Stories Company, we're not just about cleaning
-                  homes.
+                  While we aim to provide cost-effective solutions, we never
+                  compromise on the quality of our workmanship or the materials
+                  we use.
                 </p>
               </div>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center bg-[#f6f7f9] lg:py-[80px] lg:px-[75px] w-full px-5">
-            <form action="" className="w-full h-full flex flex-col gap-4">
-              <div className="flex flex-col lg:flex-row items-start justify-start w-full gap-3">
+            <form action="" className="w-full h-full flex flex-col gap-[28px]">
+              <div className="flex flex-col lg:flex-row items-start justify-start w-full gap-[30px]">
                 <div className="flex flex-col items-start justify-start w-full lg:w-[48%]">
                   <label
                     htmlFor=""
-                    className="text-base text-[#1f1f1f] font-bold text-left leading-[170%] py-2"
+                    className="text-base text-[#1f1f1f] font-medium text-left leading-[170%] py-2"
                   >
                     Name
                   </label>
@@ -38,14 +38,14 @@ export default function Contact() {
                     <input
                       type="text"
                       placeholder="First & Last Name"
-                      className="bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none"
+                      className="bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none placeholder-black border-[1px] border-[#8888881a]"
                     />
                   </div>
                 </div>
                 <div className="flex flex-col items-start justify-start w-full lg:w-[48%]">
                   <label
                     htmlFor=""
-                    className="text-base text-[#1f1f1f] font-bold text-left leading-[170%] py-2"
+                    className="text-base text-[#1f1f1f] font-medium text-left leading-[170%] py-2"
                   >
                     Email
                   </label>
@@ -53,16 +53,16 @@ export default function Contact() {
                     <input
                       type="text"
                       placeholder="Enter Your Email"
-                      className="bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none"
+                      className="bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none placeholder-black border-[1px] border-[#8888881a]"
                     />
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col lg:flex-row items-start justify-start w-full gap-3">
+              <div className="flex flex-col lg:flex-row items-start justify-start w-full gap-[30px]">
                 <div className="flex flex-col items-start justify-start w-full lg:w-[48%]">
                   <label
                     htmlFor=""
-                    className="text-base text-[#1f1f1f] font-bold text-left leading-[170%] py-2"
+                    className="text-base text-[#1f1f1f] font-medium text-left leading-[170%] py-2"
                   >
                     Phone Number
                   </label>
@@ -70,14 +70,14 @@ export default function Contact() {
                     <input
                       type="email"
                       placeholder="Add Your Phone"
-                      className="bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none"
+                      className="bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none placeholder-black border-[1px] border-[#8888881a]"
                     />
                   </div>
                 </div>
                 <div className="flex flex-col items-start justify-start w-full lg:w-[48%]">
                   <label
                     htmlFor=""
-                    className="text-base text-[#1f1f1f] font-bold text-left leading-[170%] py-2"
+                    className="text-base text-[#1f1f1f] font-medium text-left leading-[170%] py-2"
                   >
                     Location
                   </label>
@@ -85,7 +85,7 @@ export default function Contact() {
                     <input
                       type="number"
                       placeholder="Add A Subject Line"
-                      className="bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none"
+                      className="bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none placeholder-black border-[1px] border-[#8888881a]"
                     />
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function Contact() {
               <div className="flex flex-col items-start justify-start w-full">
                 <label
                   htmlFor=""
-                  className="text-base text-[#1f1f1f] font-bold text-left leading-[170%] py-2"
+                  className="text-base text-[#1f1f1f] font-medium text-left leading-[170%] py-2"
                 >
                   Message
                 </label>
@@ -101,7 +101,7 @@ export default function Contact() {
                   <textarea
                     placeholder="Write Your Message"
                     rows={7}
-                    className="resize-none bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none"
+                    className="resize-none bg-white rounded-[8px] p-3 text-black text-base leading-[170%] outline-none placeholder-black border-[1px] border-[#8888881a]"
                   ></textarea>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function Contact() {
       </section>
       <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
-          <div className="flex flex-col items-center justify-center w-full lg:w-[47%] lg:h-[657px]">
+          <div className="flex flex-col items-center justify-center w-full lg:w-[44%] lg:h-[657px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
               <div
                 className="flex flex-1 h-full w-full relative"

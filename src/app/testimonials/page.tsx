@@ -5,7 +5,7 @@ export default function Testimonial() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[130px] lg:px-[30px] lg:pb-[60px] w-full">
+      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[90px] lg:px-[30px] lg:pb-[60px] w-full">
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center w-full gap-5">
@@ -14,7 +14,7 @@ export default function Testimonial() {
                   Trusted by 5,600+ customers
                 </h1>
               </div>
-              <div className="w-full lg:w-[51%]">
+              <div className="w-full lg:w-[56%]">
                 <p className="text-lg text-[#3b3b3b] text-center font-normal leading-[1.7em]">
                   Explore the core mission and vision that drives us every day.
                   At Behind the Stories Company, we're not just about cleaning

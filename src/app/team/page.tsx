@@ -6,16 +6,16 @@ export default function Team() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center py-[130px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
+      <section className="flex flex-col items-center justify-center py-[130px] px-[20px] lg:py-[90px] lg:px-[30px] w-full">
         <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center lg:max-w-[1107px] md:max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
           <div className="flex flex-1 flex-col w-full items-center justify-center lg:justify-start gap-8 lg:gap-[43px]">
-            <div className="flex flex-col items-center w-full justify-center gap-[20px]">
+            <div className="flex flex-col items-center lg:w-[63%] w-full justify-center gap-[20px]">
               <div className="w-full">
                 <h2 className="text-[35px] lg:text-[80px] text-black text-center font-semibold leading-[1.2em]">
                   Meet Our Experts
                 </h2>
               </div>
-              <div className="mx-auto lg:w-[540px] w-full">
+              <div className="mx-auto lg:w-[93%] w-full">
                 <p className="text-base text-[#3b3b3b] text-center font-normal leading-[1.7em]">
                   Each member brings a wealth of experience and expertise,
                   contributing to our reputation for excellence in the

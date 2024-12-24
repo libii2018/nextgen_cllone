@@ -139,7 +139,7 @@ export default function Navbar({
                     BLOG
                   </a>
                   <a
-                    href="/about"
+                    href="/blogsingle"
                     className="block w-full h-full text-[14px] font-normal text-black"
                   >
                     BLOG DETAILS

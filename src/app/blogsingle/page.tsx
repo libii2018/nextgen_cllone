@@ -6,7 +6,7 @@ export default function Blogsingle() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[130px] lg:px-[30px] lg:pb-[60px] w-full">
+      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[90px] lg:px-[30px] lg:pb-[60px] w-full">
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-start w-full">
             <div className="flex flex-col items-center justify-center py-[2px] px-[10px] mr-auto bg-[#fed545] rounded-[40px] mb-5">
