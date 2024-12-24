@@ -12,7 +12,7 @@ export default function Contemporary() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[130px] lg:px-[30px] lg:pb-[30px] w-full">
+      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[90px] lg:px-[30px] lg:pb-[30px] w-full">
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center w-full justify-center">
             <div className="flex flex-col items-center justify-center w-full gap-5 pb-16">

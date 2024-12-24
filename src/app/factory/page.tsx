@@ -5,18 +5,18 @@ import React from "react";
 export default function Factory() {
   return (
     <>
-      <Navbar />
-      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[200px] lg:px-[30px] lg:pb-[60px] w-full">
-        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[60px]">
+      <Navbar bgColor="#f6f7f9" />
+      <section className="flex flex-col items-center justify-center bg-[#f6f7f9] py-[110px] px-[30px] lg:pt-[90px] lg:px-[30px] lg:pb-[385px] w-full">
+        <div className="flex flex-col items-center justify-center lg:max-w-[1280px] md:max-w-[390px] w-full gap-[60px]">
           <div className="flex flex-col items-center justify-center w-full">
             <div className="flex flex-col items-center justify-center w-full gap-5">
               <div className="w-full">
-                <h1 className="text-4xl lg:text-[80px] text-black text-left font-semibold leading-[1.2em]">
+                <h1 className="text-4xl lg:text-[80px] text-black text-left font-semibold tracking-[0px] leading-[1.2em]">
                   Factory Design
                 </h1>
               </div>
               <div className="w-full lg:mr-auto lg:w-[51%]">
-                <p className="text-lg text-[#3b3b3b] text-left font-normal leading-[1.7em]">
+                <p className="text-base text-[#3b3b3b] text-left font-normal leading-[1.7em]">
                   Our design and planning your dreams begin to take shape. Our
                   expert team closely with you to understand your vision are
                   succeeded.
@@ -24,40 +24,40 @@ export default function Factory() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row items-center justify-center bg-[#f6f7f9] w-full gap-6">
-            <div className="flex flex-col items-center justify-center w-full lg:h-[593px]">
-              <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
-                <div className="flex flex-1 h-full w-full relative">
-                  <div className="absolute w-full h-full inset-0">
-                    <img
-                      src="https://framerusercontent.com/images/KUzGBiXmYzpqTsSzpnN3CZnBgs.png"
-                      alt=""
-                      className="block w-full h-full object-center object-cover"
-                    />
-                  </div>
-                  <div className="w-[250px] h-[120px] left-[227px] top-[-18px] lg:left-[635px] lg:top-[-23px] transform rotate-[49deg] bg-white absolute"></div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-center lg:w-[58%] w-full h-[593px] relative">
-              <div className="flex flex-col items-center justify-center w-full h-full">
-                <div className="flex flex-1 h-full w-full relative">
-                  <div className="absolute w-full h-full inset-0">
-                    <img
-                      src="https://framerusercontent.com/images/ZgjOonpZGXoAgkZPlXDCTyF2CM.png"
-                      alt=""
-                      className="block w-full h-full object-center object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="w-[250px] h-[120px] right-[-110px] top-[94%] transform -translate-y-1/2 rotate-[-42deg] bg-white absolute"></div>
-            </div>
-          </div>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:px-[30px] lg:pb-[60px] w-full">
-        <div className="flex flex-col items-start justify-center lg:w-[49%] w-full">
+      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:px-[30px] lg:pb-[60px] w-full relative">
+        <div className="flex flex-col lg:flex-row items-center justify-center bg-[#f6f7f9] lg:max-w-[1280px] md:max-w-[390px] w-full gap-6 absolute left-1/2 transform -translate-x-1/2 -top-[310px]">
+          <div className="flex flex-col items-center justify-center w-full lg:h-[593px]">
+            <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
+              <div className="flex flex-1 h-full w-full relative">
+                <div className="absolute w-full h-full inset-0">
+                  <img
+                    src="https://framerusercontent.com/images/KUzGBiXmYzpqTsSzpnN3CZnBgs.png"
+                    alt=""
+                    className="block w-full h-full object-center object-cover"
+                  />
+                </div>
+                <div className="w-[250px] h-[120px] left-[227px] top-[-18px] lg:left-[635px] lg:top-[-23px] transform rotate-[49deg] bg-[#f6f7f9] absolute"></div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:w-[58%] w-full h-[593px] relative">
+            <div className="flex flex-col items-center justify-center w-full h-full">
+              <div className="flex flex-1 h-full w-full relative">
+                <div className="absolute w-full h-full inset-0">
+                  <img
+                    src="https://framerusercontent.com/images/ZgjOonpZGXoAgkZPlXDCTyF2CM.png"
+                    alt=""
+                    className="block w-full h-full object-center object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="w-[250px] h-[120px] right-[-110px] top-[94%] transform -translate-y-1/2 rotate-[-42deg] bg-[#f6f7f9] absolute"></div>
+          </div>
+        </div>
+        <div className="flex flex-col items-start justify-center pt-[280px] lg:w-[49%] w-full">
           <h2 className="text-[54px] text-black font-semibold leading-[1.2em] mb-7">
             About This Service?
           </h2>

@@ -6,17 +6,17 @@ export default function project() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[130px] lg:px-[30px] lg:pb-[60px] w-full">
+      <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[90px] lg:px-[30px] lg:pb-[60px] w-full">
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-col items-center justify-center lg:w-[51%] w-full gap-5">
+            <div className="flex flex-col items-center justify-center lg:w-[75%] w-full gap-5">
               <div className="w-full">
-                <h1 className="text-4xl lg:text-[54px] text-black text-center font-semibold leading-[1.2em]">
+                <h1 className="text-4xl lg:text-[80px] text-black text-center font-semibold leading-[1.2em]">
                   Showcase of Excellence
                 </h1>
               </div>
               <div className="w-full ">
-                <p className="text-lg text-[#3b3b3b] text-center font-normal leading-[1.7em]">
+                <p className="text-base text-[#3b3b3b] text-center font-normal leading-[1.7em]">
                   We take pride in transforming visions into reality through
                   exceptional craftsmanship and innovative design. Our diverse
                   portfolio spans residential, commercial, and industrial
@@ -37,7 +37,7 @@ export default function project() {
                   className="block w-full h-full object-center object-cover"
                 />
               </div>
-              <div className="flex flex-col items-start justify-start w-full p-5 hover:group-hover:bg-[#fed545]">
+              <div className="flex flex-col items-start justify-start w-full hover:group-hover:pl-5 py-5 pr-5 hover:group-hover:bg-[#fed545] duration-200">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
                     <h3 className="text-[32px] text-black text-left font-semibold leading-[1.2em]">
@@ -65,7 +65,7 @@ export default function project() {
                   className="block w-full h-full object-center object-cover"
                 />
               </div>
-              <div className="flex flex-col items-start justify-start w-full p-5 hover:group-hover:bg-[#fed545]">
+              <div className="flex flex-col items-start justify-start w-full hover:group-hover:pl-5 py-5 pr-5 hover:group-hover:bg-[#fed545] duration-200">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
                     <h3 className="text-[32px] text-black text-left font-semibold leading-[1.2em]">
@@ -94,7 +94,7 @@ export default function project() {
                   className="block w-full h-full object-center object-cover"
                 />
               </div>
-              <div className="flex flex-col items-start justify-start w-full p-5 hover:group-hover:bg-[#fed545]">
+              <div className="flex flex-col items-start justify-start w-full hover:group-hover:pl-5 py-5 pr-5 hover:group-hover:bg-[#fed545] duration-200">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
                     <h3 className="text-[32px] text-black text-left font-semibold leading-[1.2em]">
@@ -122,7 +122,7 @@ export default function project() {
                   className="block w-full h-full object-center object-cover"
                 />
               </div>
-              <div className="flex flex-col items-start justify-start w-full p-5 hover:group-hover:bg-[#fed545]">
+              <div className="flex flex-col items-start justify-start w-full hover:group-hover:pl-5 py-5 pr-5 hover:group-hover:bg-[#fed545] duration-200">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
                     <h3 className="text-[32px] text-black text-left font-semibold leading-[1.2em]">
@@ -150,7 +150,7 @@ export default function project() {
                   className="block w-full h-full object-center object-cover"
                 />
               </div>
-              <div className="flex flex-col items-start justify-start w-full p-5 hover:group-hover:bg-[#fed545]">
+              <div className="flex flex-col items-start justify-start w-full hover:group-hover:pl-5 py-5 pr-5 hover:group-hover:bg-[#fed545] duration-200">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
                     <h3 className="text-[32px] text-black text-left font-semibold leading-[1.2em]">
@@ -179,7 +179,7 @@ export default function project() {
                   className="block w-full h-full object-center object-cover"
                 />
               </div>
-              <div className="flex flex-col items-start justify-start w-full p-5 hover:group-hover:bg-[#fed545]">
+              <div className="flex flex-col items-start justify-start w-full hover:group-hover:pl-5 py-5 pr-5 hover:group-hover:bg-[#fed545] duration-200">
                 <div className="flex flex-col items-start justify-start">
                   <div className="w-full pt-[8px] pb-[10px]">
                     <h3 className="text-[32px] text-black text-left font-semibold leading-[1.2em]">
