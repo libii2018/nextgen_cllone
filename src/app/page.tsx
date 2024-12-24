@@ -10,7 +10,7 @@ export default function Home() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <div className="h-[34px] w-[146px] relative">
+            <div className="h-[35px] w-[146px] relative">
               <img
                 src="https://framerusercontent.com/images/CrgDd86PeNlTtuEAf38jjjkDAU.svg"
                 className="w-full h-full object-center object-contain"
@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <a className="lg:flex flex-row items-center justify-center hidden bg-[#fed545] py-2 pl-5 pr-2 gap-3 rounded-[80px] group hover:bg-white">
               <div>
-                <p className="text-base font-normal text-black leading-[1.7em] ">
+                <p className="text-base font-semibold fontFamily-mono text-black leading-[1.7em] ">
                   BOOK A MEETING
                 </p>
               </div>
@@ -64,11 +64,11 @@ export default function Home() {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col font-medium gap-10 border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li className=" relative group flex flex-row items-center justify-center gap-[5px]">
+            <ul className="flex flex-col gap-10 border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li className="relative group flex flex-row items-center justify-center gap-[5px]">
                 <Link
                   href="/"
-                  className="block text-[14px] font-normal hover:opacity-50 text-white"
+                  className="block text-[14px] fontFamily-mono font-medium hover:opacity-50 text-white"
                 >
                   ALL PAGES
                 </Link>
@@ -82,7 +82,7 @@ export default function Home() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="w-full h-full"
+                    className="block w-full h-full"
                     stroke="#fff"
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
@@ -174,23 +174,38 @@ export default function Home() {
               <li className="cursor-pointer hover:opacity-50">
                 <Link
                   href="/about"
-                  className="block w-full h-full text-[14px] font-normal text-white"
+                  className="block w-full h-full text-[14px] font-medium text-white"
                 >
                   ABOUT
                 </Link>
               </li>
-              <li className="cursor-pointer hover:opacity-50">
+              <li className="relative group flex flex-row items-center justify-center gap-[5px]">
                 <Link
                   href="/services"
-                  className="block w-full h-full text-[14px] font-normal text-white"
+                  className="block w-full h-full text-[14px] font-medium text-white"
                 >
                   SERVICES
                 </Link>
+                <div className="flex flex-col items-center w-4 h-4 justify-center transform group-hover:rotate-180 duration-150">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    stroke="#fff"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
               </li>
               <li className="cursor-pointer hover:opacity-50">
                 <Link
                   href="/appointment"
-                  className="block w-full h-full text-[14px] font-normal text-white"
+                  className="block w-full h-full text-[14px] font-medium text-white"
                 >
                   CONTACT
                 </Link>
@@ -199,7 +214,7 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <header className="w-full flex flex-col items-center justify-center lg:h-[120vh] lg:pt-[240px] lg:pb-[220px] pt-[110px] pb-[90px] px-2 relative">
+      <header className="w-full flex flex-col items-center justify-center h-fit lg:pt-[240px] lg:pb-[220px] pt-[110px] pb-[90px] px-2 relative">
         <div className="lg:max-w-[1280px] max-w-[390px] flex flex-col items-start justify-start z-10 gap-8">
           <div className="flex flex-row items-start justify-start lg:w-[56%] gap-8">
             <div className="flex flex-col items-start justify-start w-full gap-6">
@@ -221,7 +236,7 @@ export default function Home() {
             <div className="flex mx-auto h-fit relative">
               <a className="flex flex-row items-center justify-center bg-[#fed545] py-2 pl-5 pr-2 gap-3 rounded-[80px] group hover:bg-white">
                 <div>
-                  <p className="text-base font-normal text-black leading-[1.7em] ">
+                  <p className="text-base font-semibold text-black leading-[1.7em] ">
                     BOOK A MEETING
                   </p>
                 </div>
