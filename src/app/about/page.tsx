@@ -5,9 +5,9 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[130px] lg:px-[30px] w-full">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
-          <div className="flex flex-col items-center justify-center w-full lg:w-[47%] lg:h-[657px]">
+      <section className="flex flex-col items-center justify-center py-[60px] px-[20px] lg:py-[80px] lg:px-[30px] w-full">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-center lg:max-w-[1296px] max-w-[390px] w-full gap-[40px] lg:gap-[84px]">
+          <div className="flex flex-col items-center justify-center w-full lg:w-[50%] lg:h-[657px]">
             <div className="flex flex-col items-center justify-center w-full h-[380px] lg:h-full">
               <div
                 className="flex flex-1 h-full w-full relative"

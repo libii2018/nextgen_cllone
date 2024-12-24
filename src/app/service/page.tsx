@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import {
   Accordion,
@@ -15,9 +14,9 @@ export default function page() {
       <section className="flex flex-col items-center justify-center bg-white py-[110px] px-[30px] lg:pt-[130px] lg:px-[30px] lg:pb-[60px] w-full">
         <div className="flex flex-col items-center justify-center lg:max-w-[1280px] max-w-[390px] w-full gap-[40px]">
           <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-col items-center justify-center lg:w-[49%] w-full gap-5">
+            <div className="flex flex-col items-center justify-center lg:w-[712px] w-full gap-5">
               <div className="w-full">
-                <h1 className="text-4xl lg:text-[54px] text-black text-center font-semibold leading-[1.2em]">
+                <h1 className="text-4xl lg:text-[80px] text-black text-center font-semibold leading-[1.2em]">
                   Services we offer{" "}
                 </h1>
               </div>
