@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link href="https://fonts.cdnfonts.com/css/switzer" rel="stylesheet" />
+      {/* <link href="https://fonts.cdnfonts.com/css/switzer" rel="stylesheet" /> */}
       <body className={workSans.className}>{children}</body>
     </html>
   );

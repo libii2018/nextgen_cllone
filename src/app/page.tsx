@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -88,7 +87,7 @@ export default function Home() {
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
                 </div>
-                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white z-50 border-2 w-[500px] h-auto rounded-[15px] p-6 absolute right-0 top-[20px] left-0">
+                <div className="group-hover:flex flex-row hidden items-center justify-center gap-20 bg-white z-50 border-[1px] w-[500px] h-auto rounded-[15px] p-6 absolute right-0 top-[20px] left-0">
                   <div className="flex flex-col items-center justify-start w-full gap-4">
                     <Link
                       href="/"
@@ -219,7 +218,7 @@ export default function Home() {
           <div className="flex flex-row items-start justify-start lg:w-[56%] gap-8">
             <div className="flex flex-col items-start justify-start w-full gap-6">
               <div className="w-full">
-                <h1 className="lg:text-[78px] lg:text-left text-[37px] text-center font-semibold leading-[1.2em] text-white">
+                <h1 className="lg:text-[80px] lg:text-left text-[37px] text-center font-semibold leading-[1.2em] text-white">
                   Crafting Vision with Precision, Building Dream Home.
                 </h1>
               </div>
